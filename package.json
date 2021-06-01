@@ -1,0 +1,17 @@
+{
+  "name": "botnet",
+  "version": "0.0.1",
+  "description": "",
+  "main": "worker/worker.js",
+  "scripts": {
+    "start-worker": "node worker/worker.js",
+    "start-controller": "node controller/controller.js"
+  },
+  "keywords": [],
+  "author": "Iannis de Zwart",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^15.0.2",
+    "dotenv": "^10.0.0"
+  }
+}
