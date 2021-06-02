@@ -18,6 +18,7 @@ const execute = async (
 
 	if (data == null) return
 	if (data.command == null) return
+	if (typeof data.command != 'string' || data.command == '') return
 	if (data.key == null) return
 
 	// Authorise
@@ -27,6 +28,8 @@ const execute = async (
 	// Execute the command
 
 	const { stdout, stderr } = await executeCommand(data.command)
+
+	console.log('finished /execute:', { stdout, stderr })
 
 	// Send the result to the server
 

